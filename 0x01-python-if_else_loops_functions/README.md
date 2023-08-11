@@ -1,1 +1,1 @@
-# This directory contains if/else conditional codes
+This directory contains if/else conditional codes
