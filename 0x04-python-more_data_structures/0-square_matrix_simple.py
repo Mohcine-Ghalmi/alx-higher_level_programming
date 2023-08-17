@@ -1,6 +1,6 @@
-#!/user/bin/python3
+#!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    new = []
-    for i in matrix:
-        new.append(list(map(lambda i: i**2, i)))
-    return (new)
+    tmp = []
+    for x in matrix:
+        tmp.append(list(map(lambda x: x**2, x)))
+    return (tmp)
