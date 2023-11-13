@@ -1,6 +1,3 @@
 #!/usr/bin/node
-const input = process.argv[2];
-if (input)
-    console.log("Argument found");
-else
-    console.log("No argument");
+const input = process.argv.length;
+console.log(input === 2 ? 'No argument' : input === 3 ? 'Argument found' : 'Arguments found');
