@@ -8,6 +8,7 @@ from model_city import City
 
 Base = declarative_base()
 
+
 class State(Base):
     """Class representing the states table"""
     __tablename__ = 'states'
