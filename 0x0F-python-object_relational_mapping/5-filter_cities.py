@@ -14,7 +14,6 @@ if __name__ == "__main__":
         WHERE states.name = %s
         ORDER BY cities.id ASC
         """, (argv[4], ))
-    query = cur.fetchall()
-    print(", ".join(map(lambda x: x[0], query)))
+    print(", ".join(map(lambda x: x[0], cur.fetchall())))
     cur.close()
     conn.close()
