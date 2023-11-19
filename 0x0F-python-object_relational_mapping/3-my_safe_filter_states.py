@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Lists states"""
 
 import MySQLdb
 from sys import argv
@@ -9,8 +10,9 @@ if __name__ == "__main__":
     cur = conn.cursor()
     cur.execute("SELECT * FROM states WHERE name = %s ORDER BY states.id ASC",
                 (argv[4], ))
-    query_row = cur.fetchall()
-    for row in query_row:
+    query_rows = cur.fetchall()
+    for row in query_rows:
         print(row)
     cur.close()
     conn.close()
+    
