@@ -1,10 +1,6 @@
 #!/usr/bin/python3
 """
-Script that takes in a URL, sends a request to the URL and displays the
-body of the response (decoded in utf-8).
-
-Usage: ./3-error_code.py <URL>
-  - Handles HTTP errors.
+display the response body 
 """
 from sys import argv
 from urllib.request import Request, urlopen
